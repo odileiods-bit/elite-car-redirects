@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Redirecionando para o WhatsApp...</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-54W8FECB8K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-54W8FECB8K');
+</script>
+</head>
+<body>
+  <p>Redirecionando para o WhatsApp...</p>
+  <p><a id="fallback-link" href="https://wa.me/5551991998950">Clique aqui se não for redirecionado automaticamente</a></p>
+
+  <script>
+    var destino = "https://wa.me/5551991998950";
+    var jaRedirecionou = false;
+
+    function irParaDestino() {
+      if (jaRedirecionou) return;
+      jaRedirecionou = true;
+      window.location.href = destino;
+    }
+
+    gtag('event', 'conversion', {
+        'send_to': 'AW-683463883/AA_TCNOT6dQcEMup88UC',
+        'event_callback': irParaDestino
+    });
+
+    // Garante o redirecionamento mesmo se o gtag.js for bloqueado (ex: ad blocker)
+    setTimeout(irParaDestino, 1200);
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Redirecionando para o Google Maps...</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-54W8FECB8K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-54W8FECB8K');
+</script>
+</head>
+<body>
+  <p>Redirecionando para o Google Maps...</p>
+  <p><a id="fallback-link" href="https://www.google.com/maps/place/Elite+Car+Oficina+Mec%C3%A2nica+e+El%C3%A9trica/@-29.8409679,-51.1390914,17z/data=!3m1!4b1!4m6!3m5!1s0x95196f05091b7229:0x4732fb2aa6ab4e64!8m2!3d-29.8409679!4d-51.1390914!16s%2Fg%2F11fnvsf_v9?hl=pt-BR&entry=ttu">Clique aqui se não for redirecionado automaticamente</a></p>
+
+  <script>
+    var destino = "https://www.google.com/maps/place/Elite+Car+Oficina+Mec%C3%A2nica+e+El%C3%A9trica/@-29.8409679,-51.1390914,17z/data=!3m1!4b1!4m6!3m5!1s0x95196f05091b7229:0x4732fb2aa6ab4e64!8m2!3d-29.8409679!4d-51.1390914!16s%2Fg%2F11fnvsf_v9?hl=pt-BR&entry=ttu";
+    var jaRedirecionou = false;
+
+    function irParaDestino() {
+      if (jaRedirecionou) return;
+      jaRedirecionou = true;
+      window.location.href = destino;
+    }
+
+    gtag('event', 'conversion', {
+        'send_to': 'AW-683463883/tFj2CNaT6dQcEMup88UC',
+        'event_callback': irParaDestino
+    });
+
+    // Garante o redirecionamento mesmo se o gtag.js for bloqueado (ex: ad blocker)
+    setTimeout(irParaDestino, 1200);
+  </script>
+</body>
+</html>
